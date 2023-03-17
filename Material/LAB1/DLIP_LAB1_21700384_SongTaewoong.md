@@ -90,11 +90,17 @@ Considering the situation of the industrial site where the current technology is
 The mathematical basis of global binary thresholding is as follows.
 
 $$
+
 f(x, y) : input\,image\\
+
 g(x, y) : output\,image\\
+
 T : threshold\,value\\\\
+
 g(x, y)=1,\,if\,f(x, y)>T\\
+
 g(x, y)=0,\,if\,f(x, y)\leq T
+
 $$
 
  In this case, the value T can be selected through a histogram. Referring to **Figure 7**, the threshold value can be selected based on the part with very high intensity (yellow line).
