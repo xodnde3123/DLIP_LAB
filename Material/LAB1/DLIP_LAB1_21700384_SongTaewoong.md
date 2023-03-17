@@ -75,7 +75,7 @@ If you look at **Figure 5**, you can see that salt & pepper (impulse) noise is p
 
 Referring to **Figure 6**, it can be seen that the impulse noise is reduced due to the median filter.
 
-| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/noiseAnalysis.JPG" width = "480" height = "360"> | ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/medianImg.JPG){: width="360" height="240"} |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/noiseAnalysis.JPG" width = "480" height = "360"> | <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/medianImg.JPG" width = "480" height = "360"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |        **Figure 5. Salt & pepper noise in Figure 3**         |       **Figure 6. Median filtered image in Figure 3**        |
 
