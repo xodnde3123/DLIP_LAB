@@ -17,6 +17,7 @@ There are 2 different size bolts and 3 different types of nuts. You are required
 - Hexa Nut M6
 
 
+![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/grayImg.png)
 
 ![img](https://raw.githubusercontent.com/ykkimhgu/DLIP-src/main/LAB_grayscale/Lab_GrayScale_TestImage.jpg)
 
