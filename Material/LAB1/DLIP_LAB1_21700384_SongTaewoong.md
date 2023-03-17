@@ -17,8 +17,6 @@ There are 2 different size bolts and 3 different types of nuts. You are required
 - Hexa Nut M6
 
 
-![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/grayImg.png)
-
 ![img](https://raw.githubusercontent.com/ykkimhgu/DLIP-src/main/LAB_grayscale/Lab_GrayScale_TestImage.jpg)
 
 
@@ -48,7 +46,8 @@ You MUST include all the following in the report. Also, you have to draw a simpl
 
 First, to apply an appropriate filter, the given image was converted to gray-scale and histogram was analyzed.
 
-| ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/Material/LAB1/grayImg.png) | ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/hist_gray.png) |
+| ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/grayImg.png) 
+| ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/hist_gray.png) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                **Figure 1. Gray-scale image**                |             **Figure 2. Histogram of Figure 1**              |
 
