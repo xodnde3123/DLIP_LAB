@@ -91,9 +91,13 @@ The mathematical basis of global binary thresholding is as follows.
 
 $$
 f(x, y) : input\,image\\
+
 g(x, y) : output\,image\\
+
 T : threshold\,value\\\\
+
 g(x, y)=1,\,if\,f(x, y)>T\\
+
 g(x, y)=0,\,if\,f(x, y)\leq T
 $$
 
