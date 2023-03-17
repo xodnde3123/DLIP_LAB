@@ -17,6 +17,7 @@ There are 2 different size bolts and 3 different types of nuts. You are required
 - Hexa Nut M6
 
 
+
 ![img](https://raw.githubusercontent.com/ykkimhgu/DLIP-src/main/LAB_grayscale/Lab_GrayScale_TestImage.jpg)
 
 
@@ -46,8 +47,7 @@ You MUST include all the following in the report. Also, you have to draw a simpl
 
 First, to apply an appropriate filter, the given image was converted to gray-scale and histogram was analyzed.
 
-| ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/grayImg.png) 
-| ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/hist_gray.png) |
+| ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/grayImg.png) | ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/hist_gray.png) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |                **Figure 1. Gray-scale image**                |             **Figure 2. Histogram of Figure 1**              |
 
@@ -57,7 +57,7 @@ For appropriate object segmentation, high contrast between the background and th
 
 
 
-| ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/histequalImg.JPG) | ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/hist_equal.png) |
+| ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/histequalImg.JPG) | ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/hist_equal.png) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |     **Figure 3. Image applying histogram equalization**      |             **Figure 4. Histogram of Figure 3**              |
 
@@ -75,7 +75,7 @@ If you look at **Figure 5**, you can see that salt & pepper (impulse) noise is p
 
 Referring to **Figure 6**, it can be seen that the impulse noise is reduced due to the median filter.
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/noiseAnalysis.JPG" width = "480" height = "360"> | ![img](https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/medianImg.JPG){: width="360" height="240"} |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/noiseAnalysis.JPG" width = "480" height = "360"> | ![img](https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/medianImg.JPG){: width="360" height="240"} |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |        **Figure 5. Salt & pepper noise in Figure 3**         |       **Figure 6. Median filtered image in Figure 3**        |
 
@@ -99,7 +99,7 @@ $$
 
 **Figure 8** is an image derived when the threshold value is set to 240. If you look at the top center of the image, noise remains. Noise can be removed by raising the threshold value, but the reason I left it is for connecting all the edges of bolts and nuts that exist on the image. This will be explained in **Contour** below.
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/hist_med_mod.JPG" width = "480" height = "360"> | <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/thresholdImg.JPG" width = "480" height = "360"> |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/hist_med_mod.JPG" width = "480" height = "360"> | <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/thresholdImg.JPG" width = "480" height = "360"> |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 |             **Figure 7. Histogram of Figure 6**              |                **Figure 8. Threshold image**                 |
 
@@ -115,7 +115,7 @@ Generally, contour is used after applying morphology, but the reason why contour
 
 When object segmentation is attempted using morphology in the threshold image above, the edge of the hexagonal nut below attached nuts is thinner than the attached square nut, so segmentation is difficult. To solve this, by making a filled image (**Figure 9**) using a *drawcontour()* function in *opencv*, the thickness was maintained but a filled image was made to make it easier to separate the nuts.
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/preContourImg.JPG" width = "480" height = "360">F |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/preContourImg.JPG" width = "480" height = "360">F |
 | :----------------------------------------------------------: |
 |                  **Figure 9. Filled image**                  |
 
@@ -142,7 +142,7 @@ The morphology algorithm has a wide range of applications such as pruning and fi
 
 **If you look at Figure 9**, there are noise and attached nuts in the image. Erosion was applied twice to separate the nut. After that, the opening was applied 6 times to remove the remaining image noise. As a result, the image of **Figure 10** was obtained.
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/morphImg.JPG" width = "480" height = "360"> |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/morphImg.JPG" width = "480" height = "360"> |
 | :----------------------------------------------------------: |
 |           **Figure 10. Image applying morphology**           |
 
@@ -154,11 +154,11 @@ By creating a contour for the image of **Figure 10**, object segmentation is pos
 
 The objects given in this lab are bolts and nuts. Since a bolt has a distinctly longer length than a nut, it can be easily distinguished using length information. Nuts are relatively similar in length, so they can be distinguished using width information. Objects distinguished through length and width information were classified by varying intensities as shown in **Figure 11**.
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/finalImg.JPG" width = "480" height = "360"> |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/finalImg.JPG" width = "480" height = "360"> |
 | :----------------------------------------------------------: |
 |              **Figure 11. Object Segmentation**              |
 
-| <img src = "https://raw.githubusercontent.com/xodnde3123/DLIP_LAB/main/image/printImg.JPG" width = "240" height = "120"> |
+| <img src = "https://github.com/xodnde3123/DLIP_LAB/blob/main/Material/LAB1/printImg.JPG" width = "240" height = "120"> |
 | :----------------------------------------------------------: |
 |         **Figure 12. Result of object segmentation**         |
 
